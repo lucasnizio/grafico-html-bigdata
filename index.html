@@ -2,15 +2,28 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Meus Gráficos</title>
+  <title>Meus 4 Gráficos</title>
+  <style>
+    /* layout responsivo de 2x2 */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
-  <h1>Selecione um gráfico:</h1>
-  <ul>
-    <li><a href="grafico1.html" target="_blank">grafico_temperatura_media_anual_por_regiao.html</a></li>
-    <li><a href="grafico2.html" target="_blank">grafico_precipitacao_anual_por_regiao.html</a></li>
-    <li><a href="grafico3.html" target="_blank">média_temperaturas_e_precipitação_total_por_estado_(todos_os_anos).html</a></li>
-    <li><a href="grafico4.html" target="_blank">temperaturas_e_precipitação_por_estação_do_ano_(todos_os_anos).html</a></li>
-  </ul>
+  <h1>Dashboard de Gráficos</h1>
+  <div class="grid">
+    <iframe src="grafico1.html"></iframe>
+    <iframe src="grafico2.html"></iframe>
+    <iframe src="grafico3.html"></iframe>
+    <iframe src="grafico4.html"></iframe>
+  </div>
 </body>
 </html>
